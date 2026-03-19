@@ -1,8 +1,8 @@
 function contagem(){
-    confirm("Deseja iniciar a contagem?");
-    if(confirm){
+    if(confirm("Deseja iniciar a contagem?")){
         for(let i=10; i>0;i--){
-
+            alert(i);
         }
+        alert("Lançamento realizado")
     }
 }
