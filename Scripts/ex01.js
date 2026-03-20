@@ -4,12 +4,12 @@ function soma(){
     while (continuar){
         let numero = parseFloat(prompt("Digite um número para somar: "));
         if (!isNaN(numero)){
-            somar+=numero;
-            console.log(somar);
+            somarNumeros+=numero;
+            console.log(somarNumeros);
         }else{
             alert("Por favor, digite um número válido!");
         }
         continuar=confirm("Deseja adicionar mais um número?");
     }
-    alert("A soma dos numeros é: " + somar);
+    alert("A soma dos numeros é: " + somarNumeros);
 }

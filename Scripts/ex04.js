@@ -1,7 +1,7 @@
 function ordenacao(){
     const numeros = [];
     for (let i=0; i<4; i++){
-        let numero = parseFloat(prompt("Digite um número: "));
+        let numero = psseFloat(prompt("Digite um número: "));
         if (!isNaN(numero)){
             numeros.push(numero);
         }else{
@@ -9,17 +9,17 @@ function ordenacao(){
             i--;
         }
     }
-    function insertionSort(arr) {
-    for (let i = 1; i < arr.length; i++) {
-        let chave = arr[i];
+    function insertionSort() {
+    for (let i = 1; i < vetor.length; i++) {
+        let chave = vetor[i];
         let j = i - 1;
-        while (j >= 0 && arr[j] < chave) { 
-            arr[j + 1] = arr[j];
+        while (j >= 0 && vetor[j] < chave) { 
+            vetor[j + 1] = vetor[j];
             j--;
         }
-        arr[j + 1] = chave;
+        vetor[j + 1] = chave;
     }
-    return arr;
+    return vetor;
 }
     const numerosOrdenados = insertionSort(numeros);
     alert("A ordem decrescente é: " + numerosOrdenados);
