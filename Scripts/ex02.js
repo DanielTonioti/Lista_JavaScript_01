@@ -3,6 +3,8 @@ function contagem(){
         for(let i=10; i>0;i--){
             alert(i);
         }
-        alert("Lançamento realizado")
+        alert("Lançamento realizado");
+    }else{
+        alert("Lançamento encerrado");
     }
 }
