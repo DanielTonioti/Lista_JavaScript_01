@@ -1,7 +1,7 @@
 function ordenacao(){
     const numeros = [];
     for (let i=0; i<4; i++){
-        let numero = psseFloat(prompt("Digite um número: "));
+        let numero = parseFloat(prompt("Digite um número: "));
         if (!isNaN(numero)){
             numeros.push(numero);
         }else{
@@ -9,7 +9,7 @@ function ordenacao(){
             i--;
         }
     }
-    function insertionSort() {
+    function insertionSort(vetor) {
     for (let i = 1; i < vetor.length; i++) {
         let chave = vetor[i];
         let j = i - 1;

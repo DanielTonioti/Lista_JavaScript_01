@@ -1,8 +1,13 @@
 function verifica(){
-    let LetraSolicitacao = String(prompt("Me fale uma letra"));
-    if(LetraSolicitacao === "a","e","i","o","u"){
-        alert("Tchetche");
+    let LetraSolicitacao = String(prompt("Me fale uma letra em minusculo"));
+    if(typeof LetraSolicitacao === 'string'){
+
+        if(LetraSolicitacao === 'a' || LetraSolicitacao === 'e' || LetraSolicitacao === 'i' || LetraSolicitacao=== 'o' ||LetraSolicitacao=== 'u'){
+            console.log("vogal");
+        }else{
+            console.log("Consoante");
+        }
     }else{
-        alert("67");
+        alert("insira um valor valido");
     }
 }
