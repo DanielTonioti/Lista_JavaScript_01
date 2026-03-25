@@ -1,5 +1,5 @@
 function picole() {
-    let sabor = String(prompt(`
+    let sabor = prompt(`
         Sabores disponíveis:
         -(a) Chocolate
         -(b) Morango
@@ -10,35 +10,35 @@ function picole() {
         -(g) Céu Azul
         -(h) Brownie
         -(i) Hawaiano
-        Digite o código do picolé: `));
+        Digite o código do picolé: `);
 
     if (typeof sabor === 'string') {
         switch (sabor.toLowerCase()) {
-            case 'chocolate':
+            case 'a':
                 alert("R$ 1,50");
                 break;
-            case 'morango':
+            case 'b':
                 alert("R$ 2,50");
                 break;
-            case 'creme':
+            case 'c':
                 alert("R$ 2,50");
                 break;
-            case 'manga':
+            case 'd':
                 alert("R$ 3,20");
                 break;
-            case 'melancia':
+            case 'e':
                 alert("R$ 3,40");
-                break; 
-            case 'vanilla':
+                break;
+            case 'f':
                 alert("R$ 3,00");
                 break;
-            case 'céu azul':
+            case 'g':
                 alert("R$ 3,60");
                 break;
-            case 'brownie':
+            case 'h':
                 alert("R$ 4,00");
                 break;
-            case 'hawaiano':
+            case 'i':
                 alert("R$ 5,00");
                 break;
             default:
